@@ -5,6 +5,7 @@
     <NoWarn>1701;1702;1591;1573</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\R5T.Chamavia\source\R5T.Chamavia\R5T.Chamavia.csproj" />
     <ProjectReference Include="..\..\..\R5T.Goteborg.Base\source\R5T.Goteborg.Base\R5T.Goteborg.Base.csproj" />
     <ProjectReference Include="..\..\..\R5T.Viborg.Base\source\R5T.Viborg.Base\R5T.Viborg.Base.csproj" />
   </ItemGroup>
