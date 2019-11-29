@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 using Microsoft.Extensions.Options;
 
@@ -26,6 +27,9 @@ namespace R5T.Goteborg.Default
             using (var webDriver = this.WebDriverProvider.GetWebDriver())
             {
                 webDriver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(3);
+
+                // Make sure the window is the same size so that all links are shown (nothing hidden in a hamburger menu).
+                webDriver.Manage().Window.Size = new Size(1600, 768);
 
                 // Goto GitHub.com.
                 webDriver.Url = "http://www.github.com";
@@ -87,6 +91,8 @@ namespace R5T.Goteborg.Default
                 // Click the create new repository button.
                 var createRepositoryButton = webDriver.FindElement(By.CssSelector(".first-in-line"));
                 createRepositoryButton.Click();
+
+                System.Threading.Thread.Sleep(1000);
 
                 // Success!
                 string a = "A";
