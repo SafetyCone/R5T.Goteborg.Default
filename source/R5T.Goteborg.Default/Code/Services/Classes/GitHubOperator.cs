@@ -5,6 +5,7 @@ using Microsoft.Extensions.Options;
 
 using OpenQA.Selenium;
 
+using R5T.Polidea;
 using R5T.Viborg;
 
 
@@ -88,11 +89,11 @@ namespace R5T.Goteborg.Default
                 var mitLicenseListItem = webDriver.FindElement(By.CssSelector("li:nth-child(4) .select-menu-item-text"));
                 mitLicenseListItem.Click();
 
+                System.Threading.Thread.Sleep(1000);
+
                 // Click the create new repository button.
                 var createRepositoryButton = webDriver.FindElement(By.CssSelector(".first-in-line"));
                 createRepositoryButton.Click();
-
-                System.Threading.Thread.Sleep(1000);
 
                 // Success!
                 string a = "A";

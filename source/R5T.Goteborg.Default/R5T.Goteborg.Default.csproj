@@ -7,6 +7,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.Chamavia\source\R5T.Chamavia\R5T.Chamavia.csproj" />
     <ProjectReference Include="..\..\..\R5T.Goteborg.Base\source\R5T.Goteborg.Base\R5T.Goteborg.Base.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Polidea\source\R5T.Polidea\R5T.Polidea.csproj" />
     <ProjectReference Include="..\..\..\R5T.Viborg.Base\source\R5T.Viborg.Base\R5T.Viborg.Base.csproj" />
   </ItemGroup>
 </Project>
