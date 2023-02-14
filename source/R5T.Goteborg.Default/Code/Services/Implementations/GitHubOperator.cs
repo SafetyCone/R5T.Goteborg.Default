@@ -9,7 +9,7 @@ using R5T.Polidea;
 using R5T.Viborg;
 
 using R5T.T0064;
-
+using System.Threading.Tasks;
 
 namespace R5T.Goteborg.Default
 {
@@ -103,6 +103,31 @@ namespace R5T.Goteborg.Default
                 // Success!
                 string a = "A";
             }
+        }
+
+        Task<long> IGitHubOperator.CreateRepository(GitHubRepository repository)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> RepositoryExists(string owner, string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task DeleteRepository(string owner, string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<string> GetRepositoryCheckoutUrl(string owner, string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<string> GetRepositoryCheckoutUrl(long repositoryID)
+        {
+            throw new NotImplementedException();
         }
     }
 }
